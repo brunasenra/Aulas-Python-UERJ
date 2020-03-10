@@ -1,0 +1,34 @@
+import math
+p=math.exp(0)-math.exp(-10)
+
+print(p)
+
+x=range(0,10,)
+y=[math.exp(-xi) for xi in x]  # isto se chama "list comprehension"
+print(x)
+print(y)
+
+import matplotlib.pyplot as plt
+plt.bar(x,y,color="red",align="edge",width=1)
+x1=[i/1000 for i in range(0,8000)]
+y1=[math.exp(-xi) for xi in x1]
+plt.plot(x1,y1)
+#plt.show()
+
+
+
+S = 0
+for xi in x:
+    S = S+ math.exp(-xi) # *dx que e 1 nesse caso
+    
+print("Soma 10 caixinhas= ",S)
+
+
+S1= 0
+for xi in x1:
+    S1 = S1+ math.exp(-xi) * 0.001
+print("Soma 1000 caixinhas = ",S1)
+
+porc=(S1-p)/p
+
+print(porc)
