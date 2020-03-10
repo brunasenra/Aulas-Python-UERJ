@@ -1,0 +1,62 @@
+print('Exercício Aula 6.1')
+import turtle
+
+jn = turtle.Screen()
+al=turtle.Screen()
+joana = turtle.Turtle()
+alice=turtle.Turtle()
+joana.shape('turtle')
+alice.shape('turtle')
+alice.color('blue')
+
+'''for i in range(4):
+    joana.forward(50)
+    joana.left(90)
+jn.mainloop()'''
+
+def square(t):
+    for i in range(4):
+        t.forward(100)
+        t.left(90)
+def square(t,l): ##l=passos
+    for i in range(4):
+        t.forward(l)
+        t.left(90)     
+
+
+square(joana,100)
+square(alice,200)
+
+
+        
+'''def polygon(t,length,n): ##t=tartaruga/lentg=passos/n= número de lados
+    alfa = 360/n
+    for i in range(n):
+        t.forward(length)
+        t.left(alfa)
+#desenhar um hexagono regular com lado de comprimento 70'''
+
+def polygon(t, n, length): 
+    angle = 360.0 / n 
+    polyline(t, n, length, angle)
+
+
+polygon(alice,50,70,6)
+
+
+
+import math 
+def circle(t, r): 
+    circumference = 2 * math.pi * r 
+    n = 50 
+    length = circumference / n 
+    polygon(t, length, n)
+
+import math
+
+def circle(t, r): 
+    circumference = 2 * math.pi * r 
+    n = int(circumference / 3 + 3)
+    length = circumference / n 
+    polygon(t, length ,n)
+circle(alice,40)
