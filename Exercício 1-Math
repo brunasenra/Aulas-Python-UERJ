@@ -1,0 +1,43 @@
+print('Vamos iniciar os exercícios da aula 1')
+
+##Se você fizer uma corrida de 10 quilômetros em 43 minutos e 30 segundos, qual será seu tempo médio por milha? Qual é a sua velocidade média em milhas por hora? (Dica: há 1,61 quilômetros em uma milha).
+
+print('Resposta 1')
+
+km=10
+tempo=43.5 #min
+milhas= (km/1.61)
+hora=(60/tempo)
+V=(milhas/hora)
+print('Sua velocidade média é de',V,'m/h')
+
+
+
+
+##Desde sua varanda você escuta o som do primeiro fogo artificial do reveillon 3 segundos depois de ver a luz, qual a distância? (o som tem velocidade 343 m/s e a luz times 10^8 m/s).
+
+
+print('Exercício 2')
+
+som=343 #m/s
+
+dist=int(som*3)
+
+print=(dist)
+
+print('Exercicio 3')
+
+##Ache os zeros da função
+
+## y = 3 *x**2 - 4 *x -10
+import math
+
+
+a=3
+b=-4
+c=-10
+delta=math.sqrt(float((b**2)-(4*a*c)))
+bask1=float((-b+delta)/2*a)
+bask2=float((-b-delta)/2*a)
+
+print=('Os zeros da função são',bask1,'e',bask2,)
