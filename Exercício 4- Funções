@@ -1,0 +1,16 @@
+print('Exercício 4')
+
+def maximo():
+    p=0     
+    x=[]
+    while p<5:
+        y=(input('Digite um número: '))
+        x.append(y)
+        p+=1
+        print(x)
+    maior=max(x)
+    print('O maior número da lista é',maior)
+
+
+maximo()
+        
